@@ -18,7 +18,7 @@ except FileNotFoundError:
         print(result.stderr.decode())
 
 print(f"original root {os.getcwd()}")
-directory =  f"{ os.getcwd()}/terraform"
+directory =  f"{ os.getcwd()}/terragoat"
 os.chdir(directory)
 print(f"switched root {os.getcwd()}")
 
