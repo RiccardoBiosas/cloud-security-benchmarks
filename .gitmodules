@@ -1,0 +1,3 @@
+[submodule "terragoat"]
+	path = terragoat
+	url = git@github.com:bridgecrewio/terragoat.git
