@@ -1,7 +1,7 @@
 import subprocess
 from pathlib import Path
 
-repo_root = Path(__file__).resolve().parent.parent.parent
+repo_root = Path(__file__).resolve().parent.parent.parent.parent
 target_directory =  f"{repo_root}/terragoat"
 
 command = [

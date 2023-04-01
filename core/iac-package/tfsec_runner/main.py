@@ -19,7 +19,7 @@ except FileNotFoundError:
         print(result.stderr.decode())
 
 
-repo_root = Path(__file__).resolve().parent.parent.parent
+repo_root = Path(__file__).resolve().parent.parent.parent.parent
 
 print(f"original root {os.getcwd()}")
 target_directory =  f"{repo_root}/terragoat"

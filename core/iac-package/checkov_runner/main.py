@@ -2,7 +2,7 @@ import os
 from pathlib import Path
 from checkov.terraform.runner import Runner
 
-repo_root = Path(__file__).resolve().parent.parent.parent
+repo_root = Path(__file__).resolve().parent.parent.parent.parent
 target_directory =  f"{repo_root}/terragoat"
 
 checkov_runner = Runner()
