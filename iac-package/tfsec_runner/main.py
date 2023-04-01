@@ -1,5 +1,6 @@
 import subprocess
 import os
+from pathlib import Path
 
 try:
     result = subprocess.run(['tfsec', '--version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
@@ -17,13 +18,15 @@ except FileNotFoundError:
         print("failed to install tfsec.")
         print(result.stderr.decode())
 
+
+repo_root = Path(__file__).resolve().parent.parent.parent
+
 print(f"original root {os.getcwd()}")
-directory =  f"{ os.getcwd()}/terragoat"
-os.chdir(directory)
+target_directory =  f"{repo_root}/terragoat"
+os.chdir(target_directory)
 print(f"switched root {os.getcwd()}")
 
 command = f"tfsec --debug"
-
 
 try:
     tfsec_output = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)

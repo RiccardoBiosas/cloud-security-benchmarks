@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "iac-package"
+version = "0.1.0"
+description = ""
+authors = ["Riccardo Biosas <rbios@protonmail.com>"]
+readme = "README.md"
+packages = [
+    {include = "tfsec_runner"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+certifi="2022.12.7"
+charset-normalizer="3.1.0"
+idna="3.4"
+packaging="23.0"
+requests="2.28.2"
+urllib3="1.26.15"
+websocket-client="1.5.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
