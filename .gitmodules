@@ -4,3 +4,6 @@
 [submodule "kubernetes-goat"]
 	path = kubernetes-goat
 	url = https://github.com/madhuakula/kubernetes-goat.git
+[submodule "dvpwa"]
+	path = dvpwa
+	url = git@github.com:anxolerd/dvpwa.git
