@@ -1,6 +1,7 @@
 name: Build and SonarQube Scan
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
